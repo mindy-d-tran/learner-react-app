@@ -1,7 +1,8 @@
-import {leanerData} from './data/learnerData';
+// import {learnerData} from './data/learnerData';
 // import useState
 
 import './App.css';
+import Learner from './components/Learner';
 
 function App() {
   //create a new state passing the learnerData
@@ -9,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <h1>Learner App</h1>
+      <Learner />
     </div>
   );
 }
