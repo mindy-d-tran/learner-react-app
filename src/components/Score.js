@@ -1,12 +1,13 @@
 export default function Score(prop) {
   return (
-    <ul>
+    <section>
+      <h3>Scores</h3>
       {prop.scores.map((score, i) => (
         <ul key={i}>
-          <li>{score.date}</li>
-          <li>{score.score}</li>
+          <li>Date: {score.date}</li>
+          <li>Score: {score.score}</li>
         </ul>
       ))}
-    </ul>
+    </section>
   );
 }
