@@ -1,35 +1,65 @@
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  --light-purple: #D9BBE9;
+  --indigo: #7E7EBA;
+  --pink: #FDC9DE;
+  --peach: #FFDFDB;
+  --text-color: rgb(41, 36, 55);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: var(--text-color);
+  font-family: sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: var(--light-purple);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 1.5em 3em;
 }
 
-.App-link {
-  color: #61dafb;
+.learner{
+  background-color: white;
+  margin: 1.5em 0;
+  padding: 1em;
+  border-radius: 0.75em;
+  border: 0.25em solid var(--pink);
+}
+.learner>h2{
+  margin-bottom: 0.5em;
+  padding-bottom: 0.25em;
+  color: var(--text-color);
+  border-bottom: 0.1em solid var(--light-purple);
+}
+.learner section >h3{
+  color: var(--indigo);
+  margin-bottom: 0.5em;
+}
+.learner section{
+  margin: 0.75em 0;
+}
+.bold{
+  font-weight: bold;
+}
+.score{
+  border-radius: 0.75em;
+  overflow: hidden;
+
+}
+.score:first-child {
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div ul:nth-child(even){
+  background-color: var(--peach);
+}
+div ul:nth-child(odd){
+  background-color: #fceeec;
+}
+div ul{
+  list-style: none;
+  padding: 0.5em;
 }
