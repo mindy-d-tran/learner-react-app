@@ -1,10 +1,10 @@
 export default function Score(prop) {
   return (
     <section className="score">
-      <h3>Scores: </h3>
-      {prop.scores.map((score, i) => (
-        <div>
-          <ul key={i}>
+
+      <div>
+        {prop.scores.map((score, i) => (
+          <ul key={`${prop.id}${i}`}>
             <li>
               <span className="bold">Date: </span>
               {score.date}
@@ -14,8 +14,8 @@ export default function Score(prop) {
               {score.score}
             </li>
           </ul>
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
 }
