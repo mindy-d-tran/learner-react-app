@@ -7,7 +7,8 @@ export default function Learner({learners}) {
         <section key={i} className="leaner">
           <h2> {learner.name}</h2>
           <p><span className="bold">Bio: </span>{learner.bio}</p>
-          <Score scores={learner.scores}/>
+          <h3>Scores: </h3>
+          <Score scores={learner.scores} id={i}/>
         </section>
       ))}
     </main>
