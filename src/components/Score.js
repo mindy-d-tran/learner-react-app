@@ -1,7 +1,6 @@
 export default function Score(prop) {
   return (
     <section className="score">
-
       <div>
         {prop.scores.map((score, i) => (
           <ul key={`${prop.id}${i}`}>
